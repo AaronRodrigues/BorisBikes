@@ -1,7 +1,7 @@
 require 'BorisBikes'
 
 describe DockingStation do
-  # it 'releases a bike' do
-  #   expect(release).to eq true
-  # end
+   it 'responds to method to release a bike' do
+     should respond_to(:release_bike)
+   end
 end
