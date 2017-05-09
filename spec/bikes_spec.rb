@@ -8,4 +8,5 @@ describe Bike do
     instance = Bike.new
     expect(instance.working?).to eq "works!"
   end
+  
 end

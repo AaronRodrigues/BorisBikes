@@ -9,4 +9,8 @@ describe DockingStation do
      instance = DockingStation.new
      expect(instance.release_bike).to be_kind_of(Bike)
    end
+   it 'docks a bike into Docking Station' do
+  	station = DockingStation.new
+    expect(station.dock_bike).not_to be_kind_of(Bike)
+  end
 end
