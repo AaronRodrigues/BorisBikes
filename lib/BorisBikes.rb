@@ -5,26 +5,26 @@ class DockingStation
   def release_bike
       $working = true
       @bike = Bike.new
-      
+
   end
 
-  def dock_bike
-      $working = false
+  def dock(bike)
+    $working = false
  end
 
 end
 
 class Bike
- 
+
  def working?
- $working 
+   $working
  end
 
 
 end
 
-station = DockingStation.new
-bike = station.release_bike
-p bike.working?
-station.dock_bike
-p bike.working?
+# station = DockingStation.new
+# bike = station.release_bike
+# p bike.working?
+# dock(bike)
+# p bike.working?

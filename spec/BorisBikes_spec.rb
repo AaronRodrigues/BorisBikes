@@ -15,7 +15,7 @@ describe DockingStation do
   # end
   	it 'docks a bike into Docking Station' do
   		station = DockingStation.new
-  		expect(station.dock_bike).to eq false
+  		is_expected.to respond_to(:dock).with(1).argument
   	end
 
 end
