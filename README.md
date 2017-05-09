@@ -1,5 +1,4 @@
-## Title
-Boris Bikes Challenge
+## Boris Bikes Challenge
 
-## Description
+#### Description
 A program for TfL that will emulate all the docking stations, bikes, and infrastructure (repair staff, etc).
