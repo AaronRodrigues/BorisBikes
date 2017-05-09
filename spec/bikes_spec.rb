@@ -5,8 +5,9 @@ describe Bike do
     should respond_to(:working?)
   end
   it 'checks if the bike is working' do
-    instance = Bike.new
-    expect(instance.working?).to eq "works!"
+    station = DockingStation.new
+    bike = station.release_bike
+    expect(bike.working?).to be(true).or be(false)
   end
-  
+
 end
