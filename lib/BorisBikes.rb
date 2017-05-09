@@ -1,30 +1,21 @@
 class DockingStation
-  attr_reader :bike, :working
+  attr_reader :bike
   $working = false
 
   def release_bike
       $working = true
-      @bike = Bike.new
-
+      Bike.new
   end
 
   def dock(bike)
     $working = false
+    @bike = bike
  end
 
 end
 
 class Bike
-
  def working?
    $working
  end
-
-
 end
-
-# station = DockingStation.new
-# bike = station.release_bike
-# p bike.working?
-# dock(bike)
-# p bike.working?

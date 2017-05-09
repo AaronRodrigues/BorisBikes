@@ -17,5 +17,11 @@ describe DockingStation do
   		station = DockingStation.new
   		is_expected.to respond_to(:dock).with(1).argument
   	end
+    it 'prints the last docked bike' do
+      station = DockingStation.new
+      bike = station.release_bike
+      station.dock(bike)
+      expect(station.bike).to be_kind_of(Bike)
+    end
 
 end
