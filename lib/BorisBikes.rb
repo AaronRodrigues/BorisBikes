@@ -6,10 +6,12 @@ end
 
 class Bike
  def working?
-
+   "works!"
  end
 end
 
 
 station = DockingStation.new
-p station.release_bike
+bike = station.release_bike
+
+p bike.working?
